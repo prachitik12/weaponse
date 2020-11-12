@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* (a,b,c,d,e) */
+        /*(0/1, number of times ids appear,number of times classes appears, number of times type appear ) */
+        /* (0,0,0,2 ) */
+      
+       div ul > li{
+            cursor: pointer;
+        }
+
+        /*(0 ,0,2 ,4 ) */
+
+        div ul > li.highlight:hover > span{
+            background-color: coral;
+        }
+        /* (0,0 ,2 ,3)*/
+        div ul > li.highlight:hover > span{
+            background-color: olive;
+            font-size: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente numquam quae qui nobis tenetur, necessitatibus pariatur, id aperiam eos iure, expedita laborum dicta sint placeat consequatur aspernatur sit! Magnam, blanditiis?
+        <ul>
+            <li>one</li>
+            <li class="highlight"><span>Two</span></li>
+            <li>three</li>
+        </ul>
+    
+    </div>
+    <ul>
+        <li>Apple</li>  <!--style*curser:pointer;*(1,0,0,0 )-->
+        <li>orange</li>
+        <li>mango</li>
+    </ul>
+
+</body>
+</html>
